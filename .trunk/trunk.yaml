@@ -10,16 +10,21 @@ plugins:
       uri: https://github.com/trunk-io/plugins
 runtimes:
   enabled:
+    - node@18.12.1
     - python@3.10.8
 lint:
   enabled:
+    - actionlint@1.6.26
+    - checkov@2.4.9
+    - prettier@3.0.3
+    - yamllint@1.32.0
     - clippy@1.65.0
     - git-diff-check
     - osv-scanner@1.4.0
     - rustfmt@1.65.0
     - taplo@0.8.1
     - trivy@0.45.1
-    - trufflehog@3.56.1
+    - trufflehog@3.57.0
 actions:
   disabled:
     - trunk-announce
